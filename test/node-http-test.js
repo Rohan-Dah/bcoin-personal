@@ -342,5 +342,8 @@ describe('Node HTTP', function() {
     // Rescan from height 5 -- should return blocks 5 through 10, inclusive.
     await nclient.call('rescan', 5);
     assert.deepStrictEqual(matchingBlocks, blocks.slice(4));
+    
   });
+
+  
 });
